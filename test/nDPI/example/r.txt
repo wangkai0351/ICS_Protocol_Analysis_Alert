@@ -1,0 +1,81 @@
+
+-----------------------------------------------------------
+* NOTE: This is demo app to show *some* nDPI features.
+* In this demo we have implemented only some basic features
+* just to show you what you can do with the library. Feel 
+* free to extend it and send us the patches for inclusion
+------------------------------------------------------------
+
+Using nDPI (1.8.0) [1 thread(s)]
+Reading packets from pcap file /home/wangkai/yujing/ICS_PCAP/S7/s7comm_varservice_libnodavedemo/s7comm_varservice_libnodavedemo.pcap...
+Running thread 0...
+	1	TCP 192.168.1.10:4258 <-> 192.168.1.40:102 [proto: 216/ICS S7comm][4 pkts/256 bytes]
+
+nDPI Memory statistics:
+	nDPI Memory (once):      91.75 KB     
+	Flow Memory (per flow):  1.20 KB      
+	Actual Memory:           1.06 MB      
+	Peak Memory:             1.06 MB      
+
+Traffic statistics:
+	Ethernet bytes:        2920          (includes ethernet CRC/IFC/trailer)
+	Discarded bytes:       102          
+	IP packets:            29            of 31 packets total
+	IP bytes:              2224          (avg pkt size 71 bytes)
+	Unique flows:          2            
+	TCP Packets:           29           
+	UDP Packets:           0            
+	VLAN Packets:          0            
+	MPLS Packets:          0            
+	PPPoE Packets:         0            
+	Fragmented Packets:    0            
+	Max Packet size:       109          
+	Packet Len < 64:       28           
+	Packet Len 64-128:     1            
+	Packet Len 128-256:    0            
+	Packet Len 256-1024:   0            
+	Packet Len 1024-1500:  0            
+	Packet Len > 1500:     0            
+	nDPI throughput:       10.90 K pps / 8.37 Mb/sec
+	Traffic throughput:    4.83 pps / 3.80 Kb/sec
+	Traffic duration:      5.998 sec
+	Guessed flow protos:   1            
+
+
+Detected protocols:
+	ICS S7comm           packets: 29            bytes: 2224          flows: 2            
+
+
+Protocol statistics:
+	SCADA                         2224 bytes
+
+	1	TCP 192.168.1.10:102 <-> 192.168.1.40:49187 [proto: 216/ICS S7comm][2 pkts/120 bytes]
+        commandlist:[ ]
+length=======================0
+	2	TCP 192.168.1.10:4258 <-> 192.168.1.40:102 [proto: 216/ICS S7comm][27 pkts/2104 bytes]
+        commandlist:[ { "time": "06\/Dec\/2016 21:48:26", "command": "SETUP COMMUNICATION", "value": "NULL" }, { "time": "06\/Dec\/2016 21:48:26", "command": "READ VARIABLE", "value": "NULL" }, { "time": "06\/Dec\/2016 21:48:26", "command": "READ VARIABLE", "value": "NULL" }, { "time": "06\/Dec\/2016 21:48:26", "command": "WRITE VARIABLE", "value": "NULL" }, { "time": "06\/Dec\/2016 21:48:26", "command": "WRITE VARIABLE", "value": "NULL" }, { "time": "06\/Dec\/2016 21:48:26", "command": "WRITE VARIABLE", "value": "NULL" }, { "time": "06\/Dec\/2016 21:48:26", "command": "WRITE VARIABLE", "value": "NULL" }, { "time": "06\/Dec\/2016 21:48:26", "command": "READ VARIABLE", "value": "NULL" } ]
+length=======================8
+=={ "time": "06\/Dec\/2016 21:48:26", "command": "SETUP COMMUNICATION", "value": "NULL" }
+SETUP COMMUNICATION
+333333333
+=={ "time": "06\/Dec\/2016 21:48:26", "command": "READ VARIABLE", "value": "NULL" }
+READ VARIABLE
+333333333
+=={ "time": "06\/Dec\/2016 21:48:26", "command": "READ VARIABLE", "value": "NULL" }
+READ VARIABLE
+333333333
+=={ "time": "06\/Dec\/2016 21:48:26", "command": "WRITE VARIABLE", "value": "NULL" }
+WRITE VARIABLE
+333333333
+=={ "time": "06\/Dec\/2016 21:48:26", "command": "WRITE VARIABLE", "value": "NULL" }
+WRITE VARIABLE
+333333333
+=={ "time": "06\/Dec\/2016 21:48:26", "command": "WRITE VARIABLE", "value": "NULL" }
+WRITE VARIABLE
+333333333
+=={ "time": "06\/Dec\/2016 21:48:26", "command": "WRITE VARIABLE", "value": "NULL" }
+WRITE VARIABLE
+333333333
+=={ "time": "06\/Dec\/2016 21:48:26", "command": "READ VARIABLE", "value": "NULL" }
+READ VARIABLE
+333333333
